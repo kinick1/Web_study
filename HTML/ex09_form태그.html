@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 입력 양식 지정 form 태그 -->
+    <!-- action : form태그 안에 있는 데이터들을 전달하는 url지정 -->
+    <!-- method : 통신방식(get, post)-> 적지않으면 기본값인 get방식 적용 -->
+    <form action="#" >
+        ID : <input type="text" placeholder="id 입력" name="id" value="가르간티아"  maxlength="10" autofocus>
+     <!-- type="text" : 글자를 입력할수 있는 속성 
+        1) placehoder="" : 미리보기 텍스트지정
+        2) value : 기본값지정
+        3) maxlength="" : 입력할수 있는 최대 글자 제한
+        4) autofocuce : 자동 커서 설정(값넣기 없음)
+        5) readonly : 읽기 전용 (값넣기 없음)
+        -->
+        <br>
+         PW : <input type="password" placeholder="pw입력" name="pw" maxlength="20" >
+
+        <br>
+
+        <!-- 파일 업로드 태그 -->
+        <input type="file" name="face">
+        <br>
+        <input type="color">
+        
+        <br>
+        <!-- 연도, 월, 일, 시간, 선택 태그 -->
+        <input type="datetime-local">
+        <br>
+        <!-- 연도, 월, 일 -->
+        <input type="date">
+        <br>
+        <!-- 중복 선택이 가능할때 사용하는 태그 -->
+        DB <input type="checkbox" name="subject" value="DB">
+        Python <input type="checkbox" name="subject" value="Python">
+        HTML <input type="checkbox" name="subject" value="HTML">
+        <br>
+
+        <!-- 중복 선택이 불가능할때 사용하는 태그 -->
+
+        MAN <input type="radio" name="gender" value="MAN">
+        WOMAN <input type="radio" name="gender" value="WOMAN">
+        <!-- radio 버튼을 사용할 때 중복으로 선택되는것을 방지하기위해
+             name 속성을 사용해 같은 그룹으로 묶어줘야한다. -->
+        <br>
+        <!-- 숫자를 입력하는 태그 -->
+        number <input type="number">
+        <br>
+        
+        <!-- 리스트 향태로 데이터를 출력해주는 태그들
+            1) select 태그
+            2) datalist 태그
+        -->
+
+        <!-- 
+            데이터가 넘어가는 형식
+            name 에 지정된 이름으로 value속성의 값이 전송
+            ex) phone이름으로 kt라는 값이 전송
+         -->
+        무신사 선택 <select name="Phone">
+            <option value="skt">SKT</option>
+            <option value="kertist">KT</option>
+            <option value="lg">LGU+</option>
+        </select>
+        <br>
+
+        좋아하는 노래
+        <input type="text" list="music">
+        <!-- input 태그에서 사용할 요소를 미리 정의 -->
+        <datalist id="music">
+            <option value="easy"></option>
+            <option value="홀씨"></option>
+            <option value="오사마 빈 라덴"></option>
+            <option value="빈 살만"></option>
+        </datalist>
+        <br>
+
+        게시글 작성 <br>
+        <textarea name="border" cols="20" rows="15" style="resize: none;"></textarea>
+
+        <!-- 
+            form태그의 데이터를 전송하는 방법 2가지
+            1) input type="sumbit"
+            2) button 태그 활용
+            form 태그 안에있는 button 태그는 submit기능을 기본으로 가지게 된다
+            button으로 사용할려면 type을 button으로 지정해야한다.
+
+         -->
+        <br>
+        <input type="submit" value="minecraft 최신버전 크랙다운">
+         <input type="reset" value="mincraft 정식사이트 바로가기">
+         
+    </form>
+
+    
+
+
+
+
+
+
+</body>
+</html>

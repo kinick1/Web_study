@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        #div1{
+            background-color: aqua;
+            margin: 50px;
+            /* 모든 방향에 바깥여백 부여 */
+        }
+        #div2{
+            background-color: red;
+            margin: auto;
+        }
+        #div3{
+            background-color: blue;
+            margin-left: 100px;
+            margin-bottom: 300px;
+        }
+        #div4{
+            background-color: orange;
+            margin-top: 150px;
+            /*
+            마진 상쇄 현상
+            두개의 block요소에서 상하 마진이 겹쳤을 걍우
+            가장 큰 마진으로 결합되는 현상
+            */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+
+</body>
+</html>

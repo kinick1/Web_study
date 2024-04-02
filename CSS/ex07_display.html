@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        p,span{
+            width: 200px;
+            height: 200px;
+        }
+        p{
+            background-color: pink;
+            display: inline;
+        }
+
+        /* 
+        display:inline
+        종류 : span, a, strong등등 => 기본값 : inline
+        내가 담은 컨텐츠까지만 영역 차지
+        width, height 값 설정이 불가능
+        */
+        span.span1{
+            background-color: aqua;
+            display: block;
+        }
+
+        /* display : block 
+            종류: div, p, h1등등 =>기본값
+            무조건 가로로 한줄의 영역을 차지하는 속성
+            width와 height의 값 설정이 가능
+        */
+
+        span.span2{
+            background-color: tomato;
+            display: inline-block;
+        }
+
+        /* 3. display : inline-block
+                inline +block
+                =>컨텐츠까지만 크기를 ㅅㅁ지만 width, height값 설정이 가능 */
+
+        div{
+            background-color: brown;
+            display: none;
+        }
+        /* 
+            4. display : none
+            화면에 해당 요소를 보이지 않게 지정
+
+            display를 실제 조작하는 경우
+            - 메뉴바 같이 내용이 많은경우에 처음에는 display를 none으로 설정
+            - 마우스를 올렸을때 (mouesover) -> display, block, inline 으로 변경
+            - 화면상에 숨겼다가 눌렀을때 보이는 효과
+        */
+
+    </style>
+</head>
+<body>
+
+    <div>div</div>
+
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <span class="span1">ss</span>
+    <span class="span1">ss</span>
+    <span class="span1">ss</span>
+
+
+    <span class="span2">ss</span>
+    <span class="span2">ss</span>
+    <span class="span2">ss</span>
+    
+    
+
+    
+    
+</body>
+</html>

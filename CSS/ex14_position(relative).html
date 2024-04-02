@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            position:relative; 
+
+            /* 
+            position: relative
+                요소의 원래 위치를 기준으로 상대적인 위치를 선정
+            */
+        }
+        #a{
+            background-color: orange;
+            top: 100px;
+        }
+        #b{
+            background-color: tomato;
+            left: 200px;
+            z-index: 3;
+            /* 
+            z-index: (n);
+                화면에 요소가 쌓이는 순서
+                숫자가 클수록 요소가 앞으로 나옴
+            */
+        }
+        #c{
+            background-color: green;
+            bottom: 100px;
+            left: 100px;
+            z-index: 4;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="a"></div>
+    <div id="b"></div>
+    <div id="c"></div>
+</body>
+</html>

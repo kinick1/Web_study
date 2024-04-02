@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/CSS/ex20_외부스타일.css">
+    <!-- 
+        3, 외부 스타일 방법 : link태그를 사용해서 외부 css적용
+                            보안유지를 위해서, html과 분리를 위해                    
+                            link태그가 쓰인 순서대로 적용
+    -->
+    <style>
+        #a2{
+            color: violet;
+            /* 
+            2, 내부 스타일 방식 : style태그를 사용해서 css 적용
+            */
+        }
+
+    </style>
+
+    <style>
+        @import url("/CSS/ex20_import방식.css");
+    </style>
+    <!-- 
+        4, import: style태그 안에 @import를 사용해 url형식으로 연결 
+            css적용 순서가 예측 불가능
+    -->
+       
+</head>
+<body>
+    <h1 style="color: yellowgreen;">1, inline </h1>
+    <h1 id="a2">2, 내부 선언 방식</h1>
+    <h1 id="a3">3, 외부 선언 방식</h1>
+    <h1 id="a4">4, import방식</h1>
+</body>
+</html>

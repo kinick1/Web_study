@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div{
+            width: 100px;
+            height: 100px;
+        }
+
+        /* 
+        padding
+        html요소의 크기가 바뀐 것 처럼 보임
+        */
+        #red{
+            /* background-color: red; */
+            padding: 50px;
+        }
+        #yellow{
+            background-color: yellow;
+            padding: 10px;
+            box-sizing: border-box;
+            /* 
+            box-sizing
+                1) content-box : default값, 너비와 높이가 컨텐츠 영역까지만!
+                2) border-box : 너비랑 높이가 padding, border를 포함한 크기로 결정
+            */
+        }
+        #green{
+            background-color: green;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div id="red" >신</div>
+    <div id="yellow">호</div>
+    <div id="green">등</div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        #div1{
+            background-color: red;
+            border: 10px dashed blue;
+            box-sizing: border-box;
+            /* 
+            border : 선 두께 스타일 색상;
+            border-width: 선 두께 지정;
+            border-style : 스타일 지정;
+            border-color : 선 색상 지정;
+            */
+        }
+        #div2{
+            border-radius: 50px;
+            background-color: green;
+            border: 10px dashed red;
+            box-sizing: border-box;
+            /* 
+            border-radius : 모서리를 깎아 둥글게 만드는 속성
+                            모서리를 얼마나 깎을지 값을 지정
+            */
+        }
+        #div3{
+            background-color: blue;
+            border: 10px dashed green;
+            box-sizing: border-box;
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            /* 
+            %단위를 사용할 경우 너비와 높이의 상대적인 크기이기 때문에
+            직사각형 요소에서 사용할땐 모양이 무너질수 있다.
+            
+            */
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+
+    
+</body>
+</html>
